@@ -1,14 +1,22 @@
 class Calculator:
-    def addition(self,num1,num2):
+    def addition(self):
+        num1 = int(input("Enter first Number: "))
+        num2 = int(input("Enter Second Number: "))
         total = num1 + num2
         print(total)
-    def subtractioin(self,num1,num2):
+    def subtractioin(self):
+        num1 = int(input("Enter first Number: "))
+        num2 = int(input("Enter Second Number: "))
         total = num1 - num2
         print(total)
-    def multiplication(self,num1,num2):
+    def multiplication(self):
+        num1 = int(input("Enter first Number: "))
+        num2 = int(input("Enter Second Number: "))
         total = num1 * num2
         print(total)
-    def division(self,num1,num2):
+    def division(self):
+        num1 = int(input("Enter first Number: "))
+        num2 = int(input("Enter Second Number: "))
         if num2 != 0:
             total = num1 / num2
             print(total)
@@ -19,8 +27,6 @@ class Calculator:
         while True:
             title = "Basic Calculator".center(50)
             print(title)
-            num1 = int(input("Enter first Number: "))
-            num2 = int(input("Enter Second Number: "))
 
             print("1. Addition")
             print("2. Subtraction")
@@ -30,13 +36,13 @@ class Calculator:
             choice = input(">")
 
             if choice == "1":
-                self.addition(num1,num2)
+                self.addition()
             elif choice == "2":
-                self.subtractioin(num1,num2)
+                self.subtractioin()
             elif choice == "3":
-                self.multiplication(num1,num2)
+                self.multiplication()
             elif choice == "4":
-                self.division(num1,num2)
+                self.division()
             elif choice == "q" or choice == "Q":
                 break
             else:
